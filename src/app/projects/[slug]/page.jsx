@@ -302,21 +302,22 @@ const projects = [
       "Netlify deployment"
     ],
   },
-    {
+  {
     slug: "bioinformatik",
-    title: "Bioinformatics Analysis",
+    title: "Bioinformatics Analysis of Chronic Urticaria",
 
     icon: "#",
 
     desc:
-      "A personal portfolio website showcasing my background, projects, research, and experiences as a Statistics student and aspiring data scientist.",
+      "Bioinformatics analysis of Chronic Urticaria using GEO microarray datasets, GEO2R, and R to identify differentially expressed genes and molecular pathways.",
 
     tags: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "GitHub",
-      "Netlify"
+      "R",
+      "Bioinformatics",
+      "GEO2R",
+      "Microarray",
+      "Gene Expression",
+      "limma"
     ],
 
     cover:
@@ -329,46 +330,47 @@ const projects = [
       "#",
 
     github:
-      "https://github.com/LouuRey/web/tree/main",
+      "#",
 
     demo:
-      "https://mamm.netlify.app/",
+      "https://www.ncbi.nlm.nih.gov/geo/geo2r/",
 
     detail:
-      "This project is my personal website designed to present my background, academic journey, projects, research interests, and technical skills in a clean and accessible way. Built using vanilla HTML, CSS, and JavaScript, the website serves as a digital portfolio where visitors can learn more about me, explore my work, and access my social and professional profiles. The site is deployed through Netlify and maintained using GitHub, providing a simple, fast, and responsive experience across devices.",
+      "This project reanalyzes public microarray datasets (GSE57178 and GSE72540) from the Gene Expression Omnibus (GEO) to investigate the molecular mechanisms of Chronic Urticaria. Differentially Expressed Genes (DEGs) were identified using GEO2R and analyzed further in R with packages such as GEOquery, limma, ggplot2, ComplexHeatmap, and EnhancedVolcano. The workflow included DEG identification, volcano plot visualization, heatmap generation, enrichment analysis, protein-protein interaction network analysis, and immune infiltration investigation. Results revealed key hub genes including IL6, PTGS2, ICAM1, TLR4, and CD14, as well as significant enrichment in NF-kB, TNF, and JAK-STAT signaling pathways.",
 
     gallery: [
-      "/images/personalwebsite-gal1.jpg",
-      "/images/personalwebsite-gal2.jpg",
-      "/images/personalwebsite-gal3.jpg",
+      "/images/bioinformatik-gal1.jpg",
+      "/images/bioinformatik-gal2.jpg",
+      "/images/bioinformatik-gal3.jpg",
     ],
 
     features: [
-      "Personal profile and biography",
-      "Project portfolio showcase",
-      "Research and academic highlights",
-      "Responsive design for all devices",
-      "Interactive navigation and animations",
-      "Social media and contact links",
-      "GitHub integration",
-      "Netlify deployment"
+      "GEO microarray data acquisition",
+      "Differential Gene Expression (DEG) analysis",
+      "Volcano plot visualization",
+      "Heatmap and UMAP analysis",
+      "Gene Ontology enrichment analysis",
+      "KEGG pathway analysis",
+      "Protein-Protein Interaction (PPI) network analysis",
+      "Immune infiltration analysis using CIBERSORT"
     ],
   },
-    {
+  {
     slug: "clustering",
-    title: "Clustering Analysis",
+    title: "Clustering Analysis of Indonesian Provinces",
 
     icon: "#",
 
     desc:
-      "A personal portfolio website showcasing my background, projects, research, and experiences as a Statistics student and aspiring data scientist.",
+      "Cluster analysis of Indonesian provinces using K-Means and Fuzzy C-Means algorithms with spatial visualization in R.",
 
     tags: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "GitHub",
-      "Netlify"
+      "R",
+      "Clustering",
+      "K-Means",
+      "Fuzzy C-Means",
+      "Spatial Analysis",
+      "GIS"
     ],
 
     cover:
@@ -381,46 +383,47 @@ const projects = [
       "#",
 
     github:
-      "https://github.com/LouuRey/web/tree/main",
+      "#",
 
     demo:
-      "https://mamm.netlify.app/",
+      "#",
 
     detail:
-      "This project is my personal website designed to present my background, academic journey, projects, research interests, and technical skills in a clean and accessible way. Built using vanilla HTML, CSS, and JavaScript, the website serves as a digital portfolio where visitors can learn more about me, explore my work, and access my social and professional profiles. The site is deployed through Netlify and maintained using GitHub, providing a simple, fast, and responsive experience across devices.",
+      "This project analyzes the characteristics of Indonesian provinces using clustering techniques in R. The analysis utilizes labor and economic indicators including unemployment rate (TPT), labor force participation rate (TPAK), gender ratio, and provincial minimum wage (UMP). Data were standardized before applying K-Means and Fuzzy C-Means clustering algorithms. The optimal number of clusters was determined using the Elbow Method and Silhouette Analysis. Additional evaluations included correlation analysis, cluster visualization, and spatial mapping using GIS data to identify regional patterns across Indonesia. The project demonstrates how unsupervised learning can be used to uncover similarities and differences among provinces for policy and development insights.",
 
     gallery: [
-      "/images/personalwebsite-gal1.jpg",
-      "/images/personalwebsite-gal2.jpg",
-      "/images/personalwebsite-gal3.jpg",
+      "/images/clustering-gal1.jpg",
+      "/images/clustering-gal2.jpg",
+      "/images/clustering-gal3.jpg",
     ],
 
     features: [
-      "Personal profile and biography",
-      "Project portfolio showcase",
-      "Research and academic highlights",
-      "Responsive design for all devices",
-      "Interactive navigation and animations",
-      "Social media and contact links",
-      "GitHub integration",
-      "Netlify deployment"
+      "Data standardization and preprocessing",
+      "Elbow Method for optimal cluster selection",
+      "Silhouette Analysis for cluster validation",
+      "K-Means clustering",
+      "Fuzzy C-Means clustering",
+      "Correlation heatmap visualization",
+      "Cluster distribution mapping using GIS",
+      "Spatial visualization of Indonesian provinces"
     ],
   },
-    {
+  {
     slug: "cafeorder",
     title: "Cafe Order System",
 
     icon: "#",
 
     desc:
-      "A personal portfolio website showcasing my background, projects, research, and experiences as a Statistics student and aspiring data scientist.",
+      "Full-stack cafe ordering platform with menu management, authentication, and order processing.",
 
     tags: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "GitHub",
-      "Netlify"
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Tailwind CSS"
     ],
 
     cover:
@@ -433,29 +436,29 @@ const projects = [
       "#",
 
     github:
-      "https://github.com/LouuRey/web/tree/main",
+      "#",
 
     demo:
-      "https://mamm.netlify.app/",
+      "#",
 
     detail:
-      "This project is my personal website designed to present my background, academic journey, projects, research interests, and technical skills in a clean and accessible way. Built using vanilla HTML, CSS, and JavaScript, the website serves as a digital portfolio where visitors can learn more about me, explore my work, and access my social and professional profiles. The site is deployed through Netlify and maintained using GitHub, providing a simple, fast, and responsive experience across devices.",
+      "Cafe Order System is a full-stack web application developed to streamline food and beverage ordering in cafes. The frontend is built with Next.js, providing a responsive and modern user interface, while the backend uses Express.js and MongoDB for API services and data storage. The system supports secure user authentication using JWT and bcrypt, menu management, order tracking, and customer order processing. The project demonstrates full-stack development, RESTful API integration, and database management.",
 
     gallery: [
-      "/images/personalwebsite-gal1.jpg",
-      "/images/personalwebsite-gal2.jpg",
-      "/images/personalwebsite-gal3.jpg",
+      "/images/cafeorder-gal1.jpg",
+      "/images/cafeorder-gal2.jpg",
+      "/images/cafeorder-gal3.jpg",
     ],
 
     features: [
-      "Personal profile and biography",
-      "Project portfolio showcase",
-      "Research and academic highlights",
-      "Responsive design for all devices",
-      "Interactive navigation and animations",
-      "Social media and contact links",
-      "GitHub integration",
-      "Netlify deployment"
+      "User authentication with JWT",
+      "Password encryption using bcrypt",
+      "Menu management system",
+      "Order creation and tracking",
+      "RESTful API architecture",
+      "MongoDB database integration",
+      "Responsive Next.js frontend",
+      "Admin and customer workflows"
     ],
   },
     {
@@ -510,108 +513,103 @@ const projects = [
       "Netlify deployment"
     ],
   },
-    {
+  {
     slug: "faceapp",
-    title: "Face Recognition",
+    title: "Face Recognition & Liveness Detection",
 
     icon: "#",
 
     desc:
-      "A personal portfolio website showcasing my background, projects, research, and experiences as a Statistics student and aspiring data scientist.",
+      "AI-powered face recognition system with multimodal liveness detection using facial landmarks, blink detection, head movement analysis, and voice verification.",
 
     tags: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "GitHub",
-      "Netlify"
+      "Next.js",
+      "TypeScript",
+      "React",
+      "MediaPipe",
+      "Computer Vision",
+      "Face Recognition",
+      "AI"
     ],
 
     cover:
       "/images/faceapp-cover.jpg",
 
     youtube:
-      "/video/spatial.mp4",
+      "/video/faceapp.mp4",
 
     pdf:
       "#",
 
     github:
-      "https://github.com/LouuRey/web/tree/main",
+      "#",
 
     demo:
-      "https://mamm.netlify.app/",
+      "#",
 
     detail:
-      "This project is my personal website designed to present my background, academic journey, projects, research interests, and technical skills in a clean and accessible way. Built using vanilla HTML, CSS, and JavaScript, the website serves as a digital portfolio where visitors can learn more about me, explore my work, and access my social and professional profiles. The site is deployed through Netlify and maintained using GitHub, providing a simple, fast, and responsive experience across devices.",
+      "This project is an AI-based face recognition system built with Next.js and MediaPipe Face Landmarker. The application performs facial recognition using facial landmark embeddings and cosine similarity matching. To prevent spoofing attacks, the system incorporates multimodal liveness verification including blink detection, head movement validation, mouth movement analysis, and voice authentication. Real-time webcam processing, facial landmark visualization, and adaptive threshold calibration are used to improve recognition accuracy and security.",
 
     gallery: [
-      "/images/personalwebsite-gal1.jpg",
-      "/images/personalwebsite-gal2.jpg",
-      "/images/personalwebsite-gal3.jpg",
+      "/images/faceapp-gal1.jpg",
+      "/images/faceapp-gal2.jpg",
+      "/images/faceapp-gal3.jpg",
     ],
 
     features: [
-      "Personal profile and biography",
-      "Project portfolio showcase",
-      "Research and academic highlights",
-      "Responsive design for all devices",
-      "Interactive navigation and animations",
-      "Social media and contact links",
-      "GitHub integration",
-      "Netlify deployment"
+      "Real-time face recognition",
+      "Facial landmark extraction with MediaPipe",
+      "Blink detection using Eye Aspect Ratio (EAR)",
+      "Head movement verification",
+      "Mouth movement detection",
+      "Voice authentication challenge",
+      "Multimodal liveness detection",
+      "Adaptive threshold calibration",
+      "Webcam-based real-time processing",
+      "Face similarity matching with cosine similarity"
     ],
   },
-    {
+  {
     slug: "robloxmap",
     title: "Roblox Map Builder",
-
     icon: "#",
-
     desc:
-      "A personal portfolio website showcasing my background, projects, research, and experiences as a Statistics student and aspiring data scientist.",
+      "3D interactive Roblox map project combining game design, scripting, and environment modeling using Roblox Studio, Blender, and Lua scripting.",
 
     tags: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "GitHub",
-      "Netlify"
+      "Roblox Studio",
+      "Blender",
+      "Lua",
+      "3D Modeling",
+      "Game Development",
+      "Interactive Design"
     ],
 
-    cover:
-      "/images/roblox-cover.jpg",
+    cover: "/images/roblox-cover.jpg",
+    youtube: "/video/spatial.mp4",
+    pdf: "#",
 
-    youtube:
-      "/video/spatial.mp4",
-
-    pdf:
-      "#",
-
-    github:
-      "https://github.com/LouuRey/web/tree/main",
-
-    demo:
-      "https://mamm.netlify.app/",
+    github: "https://github.com/LouuRey/web/tree/main",
+    demo: "https://mamm.netlify.app/",
 
     detail:
-      "This project is my personal website designed to present my background, academic journey, projects, research interests, and technical skills in a clean and accessible way. Built using vanilla HTML, CSS, and JavaScript, the website serves as a digital portfolio where visitors can learn more about me, explore my work, and access my social and professional profiles. The site is deployed through Netlify and maintained using GitHub, providing a simple, fast, and responsive experience across devices.",
+      "This project is a 3D interactive Roblox map builder developed as a game environment and simulation experience. The project combines Roblox Studio for world building, Blender for 3D asset modeling, and Lua scripting for gameplay logic and interactivity. Additional tools such as Microsoft Trellis and Cube3D Interactive were used to enhance scene structuring and spatial interaction design. The workflow also integrates Croma for visual tuning and environment aesthetics. The final result is a playable and interactive map that demonstrates game design, spatial thinking, and scripting ability.",
 
     gallery: [
-      "/images/personalwebsite-gal1.jpg",
-      "/images/personalwebsite-gal2.jpg",
-      "/images/personalwebsite-gal3.jpg",
+      "/images/robloxmap-gal1.jpg",
+      "/images/robloxmap-gal2.jpg",
+      "/images/robloxmap-gal3.jpg"
     ],
 
     features: [
-      "Personal profile and biography",
-      "Project portfolio showcase",
-      "Research and academic highlights",
-      "Responsive design for all devices",
-      "Interactive navigation and animations",
-      "Social media and contact links",
-      "GitHub integration",
-      "Netlify deployment"
+      "3D interactive Roblox environment",
+      "Game world built using Roblox Studio",
+      "Custom 3D assets created in Blender",
+      "Lua scripting for gameplay mechanics",
+      "Interactive map navigation system",
+      "Optimized scene structure and performance",
+      "Visual enhancement and lighting tuning",
+      "Cross-tool pipeline workflow (Roblox + Blender + scripting)"
     ],
   },
 ];
