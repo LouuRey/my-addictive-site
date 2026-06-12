@@ -323,7 +323,7 @@ const projects = [
       "/images/bioinformatik-cover.png",
 
     youtube:
-      "/video/spatial.mp4",
+      "/video/bioinformatik.mp4",
 
     pdf:
       "#",
@@ -375,7 +375,7 @@ const projects = [
       "/images/clustering-cover.jpg",
 
     youtube:
-      "/video/spatial.mp4",
+      "/video/clustering.mp4",
 
     pdf:
       "#",
@@ -427,7 +427,7 @@ const projects = [
       "/images/cafeorder-cover.jpg",
 
     youtube:
-      "/video/spatial.mp4",
+      "/video/cafeorder.mp4",
 
     pdf:
       "#",
@@ -580,7 +580,7 @@ const projects = [
     ],
 
     cover:
-      "/images/personalwebsite-cover.jpg",
+      "/images/roblox-cover.jpg",
 
     youtube:
       "/video/spatial.mp4",
