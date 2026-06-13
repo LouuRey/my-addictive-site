@@ -487,76 +487,127 @@ function Newsletter() {
 
 function Contact() {
   return (
-    <section id="contact" netlify className="px-6 py-20">
+    <section id="contact" className="px-6 py-20">
       <div className="mx-auto max-w-5xl">
-        <SectionHeading icon={Mail} title="Contact" subtitle="Let’s build something addictive" />
+
+        <SectionHeading
+          icon={Mail}
+          title="Contact"
+          subtitle="Let’s build something addictive"
+        />
+
         <div className="grid gap-6 md:grid-cols-2">
+
+          {/* FORM */}
           <Card className="rounded-2xl">
             <CardContent className="p-6">
-              <form className="grid gap-3">
-                <Input placeholder="Your name" className="rounded-xl" />
-                <Input placeholder="Email" className="rounded-xl" />
-                <Textarea placeholder="Tell me about your idea…" className="min-h-[120px] rounded-xl" />
-                <Button className="rounded-xl">Send</Button>
+
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                className="grid gap-3"
+              >
+
+                {/* WAJIB NETLIFY */}
+                <input type="hidden" name="form-name" value="contact" />
+
+                <Input
+                  name="name"
+                  placeholder="Your name"
+                  className="rounded-xl"
+                  required
+                />
+
+                <Input
+                  name="email"
+                  placeholder="Email"
+                  className="rounded-xl"
+                  required
+                />
+
+                <Textarea
+                  name="message"
+                  placeholder="Tell me about your idea…"
+                  className="min-h-[120px] rounded-xl"
+                  required
+                />
+
+                <Button type="submit" className="rounded-xl">
+                  Send
+                </Button>
+
               </form>
+
             </CardContent>
           </Card>
-          <div className="grid gap-3">
-            <a href="https://mail.google.com/mail/?view=cm&to=kurokoandriyas@gmail.com" className="inline-flex items-center gap-2 rounded-2xl border bg-background/60 px-4 py-3 shadow transition hover:shadow-md">
-              <Mail className="h-4 w-4" /> kurokoandriyas@gmail.com
-            </a>
-            <div className="flex gap-3">
-              {/* GitHub */}
-              <a
-                href="https://github.com/LouuRey"
-                className="inline-flex h-12 w-12 items-center justify-center rounded-xl shadow-lg transition hover:scale-105"
-                style={{ backgroundColor: "#181717", color: "white" }}
-              >
-                <Github className="h-6 w-6" />
+
+          {/* INFO + SOCIAL */}
+          <Card className="rounded-2xl">
+            <CardContent className="p-6 flex flex-col gap-4">
+
+              <p className="text-sm opacity-80">
+                Or contact me directly:
+              </p>
+
+              <a href="mailto:kurokoandriyas@gmail.com" className="text-sm underline">
+                kurokoandriyas@gmail.com
               </a>
 
-              {/* LinkedIn */}
-              <a
-                href="https://www.linkedin.com/in/muhammad-andriyas-musa-munthalib-745198253/"
-                className="inline-flex h-12 w-12 items-center justify-center rounded-xl shadow-lg transition hover:scale-105"
-                style={{ backgroundColor: "#0A66C2", color: "white" }}
-              >
-                <Linkedin className="h-6 w-6" />
-              </a>
+              {/* SOCIAL ICONS */}
+              <div className="flex gap-3 mt-4 flex-wrap">
 
-              {/* YouTube */}
-              <a
-                href="https://www.youtube.com/channel/UC3RrRpy_-rZ2zjPY1jvcm0g"
-                className="inline-flex h-12 w-12 items-center justify-center rounded-xl shadow-lg transition hover:scale-105"
-                style={{ backgroundColor: "#FF0000", color: "white" }}
-              >
-                <Youtube className="h-6 w-6" />
-              </a>
+                <a
+                  href="https://github.com/LouuRey"
+                  className="inline-flex h-12 w-12 items-center justify-center rounded-xl shadow-lg transition hover:scale-105"
+                  style={{ backgroundColor: "#181717", color: "white" }}
+                >
+                  <Github className="h-6 w-6" />
+                </a>
 
-              {/* Twitter */}
-              <a
-                href="#"
-                className="inline-flex h-12 w-12 items-center justify-center rounded-xl shadow-lg transition hover:scale-105"
-                style={{ backgroundColor: "#1DA1F2", color: "white" }}
-              >
-                <X className="h-6 w-6" />
-              </a>
+                <a
+                  href="https://www.linkedin.com/in/muhammad-andriyas-musa-munthalib-745198253/"
+                  className="inline-flex h-12 w-12 items-center justify-center rounded-xl shadow-lg transition hover:scale-105"
+                  style={{ backgroundColor: "#0A66C2", color: "white" }}
+                >
+                  <Linkedin className="h-6 w-6" />
+                </a>
 
-              {/* Instagram */}
-              <a
-                href="https://www.instagram.com/andriyasmm/"
-                className="inline-flex h-12 w-12 items-center justify-center rounded-xl shadow-lg transition hover:scale-105"
-                style={{ 
-                  background: "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)", 
-                  color: "white" 
-                }}
-              >
-                <Instagram className="h-6 w-6" />
-              </a>
-            </div>
+                <a
+                  href="https://www.youtube.com/channel/UC3RrRpy_-rZ2zjPY1jvcm0g"
+                  className="inline-flex h-12 w-12 items-center justify-center rounded-xl shadow-lg transition hover:scale-105"
+                  style={{ backgroundColor: "#FF0000", color: "white" }}
+                >
+                  <Youtube className="h-6 w-6" />
+                </a>
 
-          </div>
+                <a
+                  href="#"
+                  className="inline-flex h-12 w-12 items-center justify-center rounded-xl shadow-lg transition hover:scale-105"
+                  style={{ backgroundColor: "#1DA1F2", color: "white" }}
+                >
+                  <X className="h-6 w-6" />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/andriyasmm/"
+                  className="inline-flex h-12 w-12 items-center justify-center rounded-xl shadow-lg transition hover:scale-105"
+                  style={{
+                    background:
+                      "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)",
+                    color: "white",
+                  }}
+                >
+                  <Instagram className="h-6 w-6" />
+                </a>
+
+              </div>
+
+            </CardContent>
+          </Card>
+
         </div>
+
       </div>
     </section>
   );
