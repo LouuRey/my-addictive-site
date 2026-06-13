@@ -487,7 +487,7 @@ function Newsletter() {
 
 function Contact() {
   return (
-    <section id="contact" className="px-6 py-20">
+    <section id="contact" netlify className="px-6 py-20">
       <div className="mx-auto max-w-5xl">
         <SectionHeading icon={Mail} title="Contact" subtitle="Let’s build something addictive" />
         <div className="grid gap-6 md:grid-cols-2">
