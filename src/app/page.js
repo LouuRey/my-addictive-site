@@ -505,12 +505,14 @@ function Contact() {
               <form
                 name="contact"
                 method="POST"
+                action="/success"
                 data-netlify="true"
+                netlify-honeypot="bot-field"
                 className="grid gap-3"
               >
-
-                {/* WAJIB NETLIFY */}
                 <input type="hidden" name="form-name" value="contact" />
+
+                <input type="hidden" name="bot-field" />
 
                 <Input
                   name="name"
@@ -520,6 +522,7 @@ function Contact() {
                 />
 
                 <Input
+                  type="email"
                   name="email"
                   placeholder="Email"
                   className="rounded-xl"
@@ -533,10 +536,9 @@ function Contact() {
                   required
                 />
 
-                <Button type="submit" className="rounded-xl">
+                <Button type="submit">
                   Send
                 </Button>
-
               </form>
 
             </CardContent>
