@@ -491,19 +491,25 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setFormState("sending");
+
+    const form = e.target;
+
     try {
-      const res = await fetch("/__forms.html", {
+      const response = await fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(new FormData(e.target)).toString(),
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams(new FormData(form)).toString(),
       });
-      if (res.ok) {
+
+      if (response.ok) {
         setFormState("success");
-        e.target.reset();
+        form.reset();
       } else {
         setFormState("error");
       }
-    } catch {
+    } catch (error) {
       setFormState("error");
     }
   };
