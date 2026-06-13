@@ -1,7 +1,4 @@
 "use client";
-export const metadata = {
-  title: 'CafeOrder',
-}
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence, useMotionValue, useTransform, animate} from "framer-motion";
