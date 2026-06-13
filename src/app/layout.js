@@ -23,6 +23,12 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <form name="contact" netlify hidden>
+          <input name="name" />
+          <input name="email" />
+          <textarea name="message" />
+        </form>
+
       </body>
     </html>
   );
