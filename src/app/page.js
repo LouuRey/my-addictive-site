@@ -486,6 +486,28 @@ function Newsletter() {
 }
 
 function Contact() {
+  const [formState, setFormState] = useState("idle"); // idle | sending | success | error
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setFormState("sending");
+    try {
+      const res = await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(e.target)).toString(),
+      });
+      if (res.ok) {
+        setFormState("success");
+        e.target.reset();
+      } else {
+        setFormState("error");
+      }
+    } catch {
+      setFormState("error");
+    }
+  };
+
   return (
     <section id="contact" className="px-6 py-20">
       <div className="mx-auto max-w-5xl">
@@ -505,14 +527,15 @@ function Contact() {
               <form
                 name="contact"
                 method="POST"
-                action="/success"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
                 className="grid gap-3"
+                onSubmit={handleSubmit}
               >
                 <input type="hidden" name="form-name" value="contact" />
-
-                <input type="hidden" name="bot-field" />
+                <p style={{ display: "none" }}>
+                  <input name="bot-field" />
+                </p>
 
                 <Input
                   name="name"
@@ -536,9 +559,16 @@ function Contact() {
                   required
                 />
 
-                <Button type="submit">
-                  Send
+                <Button type="submit" disabled={formState === "sending"}>
+                  {formState === "sending" ? "Sending…" : "Send"}
                 </Button>
+
+                {formState === "success" && (
+                  <p className="text-sm text-green-500">Message sent! I’ll get back to you soon.</p>
+                )}
+                {formState === "error" && (
+                  <p className="text-sm text-red-500">Something went wrong. Please try again.</p>
+                )}
               </form>
 
             </CardContent>
